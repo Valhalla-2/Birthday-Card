@@ -83,6 +83,10 @@ picture {
   flex-wrap: wrap;
   overflow: hidden;
   transition: opacity 500ms;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
 }
 
 .balloon {
