@@ -38,12 +38,12 @@ picture {
 
 .disappear-left {
   display: inline-block;
-  animation: left 1500ms ease-in-out 1;
+  animation: left 1500ms ease-in-out 2;
 }
 
 .disappear-right {
   display: inline-block;
-  animation: right 1500ms ease-in-out 1;
+  animation: right 1500ms ease-in-out 2;
 }
 
 @keyframes left {
