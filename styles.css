@@ -92,6 +92,7 @@ picture {
   background: linear-gradient(180deg, #7a7474, white);
   height: 5px;
   animation: line 1500ms ease-in-out 1;
+  border-radius: 15px;
 }
 
 @keyframes line {
