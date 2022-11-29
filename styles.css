@@ -21,29 +21,32 @@ img,
 picture {
   max-width: 100%;
   display: block;
-  border-radius: 35px 35px 5px 5px;
+  border-radius: 5px;
+  border: 1px double grey;
+  animation: zoom 2000ms ease-in-out 1;
 }
 
 .card {
-  border-radius: 50px;
+  border-radius: 5px;
   background: #e0e0e0;
-  box-shadow: 20px 20px 60px #bebebe,
-    -20px -20px 60px #ffffff;
-  height: 31rem;
-  width: 20rem;
+  box-shadow: 15px 15px 50px #bebebe, -15px -15px 50px #ffffff;
+  height: 32rem;
+  max-width: 20rem;
   text-align: center;
   padding: 1em;
   margin: 5rem auto;
 }
 
+
+
 .disappear-left {
   display: inline-block;
-  animation: left 1500ms ease-in-out 2;
+  animation: left 1500ms ease-in-out 1;
 }
 
 .disappear-right {
   display: inline-block;
-  animation: right 1500ms ease-in-out 2;
+  animation: right 1500ms ease-in-out 1;
 }
 
 @keyframes left {
@@ -70,17 +73,28 @@ picture {
   }
 }
 
+@keyframes zoom {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
 .text {
   margin: 1.5rem 1rem 0 1rem;
 }
 
 .note {
-  padding: 1rem;
+  padding: 0 1.5rem;
   color: grey;
 }
 
 .first-para {
-  margin:10px 0;
+  margin: 10px 0;
 }
 
 .note p:last-of-type {
@@ -91,20 +105,18 @@ picture {
   margin: 1rem auto;
   background: linear-gradient(180deg, #7a7474, white);
   height: 5px;
-  animation: line 1500ms ease-in-out 1;
+  animation: line 2500ms ease-in-out 1;
   border-radius: 15px;
 }
 
 @keyframes line {
+  0% {
+    width: 5%;
+  }
 
-0% {
-  width: 5%;
-}
-
-100% {
-  width: 100%;
-}
-
+  100% {
+    width: 100%;
+  }
 }
 
 /* balloon Effects */
