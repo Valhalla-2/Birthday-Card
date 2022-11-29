@@ -7,7 +7,7 @@
 html, body {
   width: 100vw;
   min-height: 100vh;
-font-family: 'Dancing Script', cursive;
+  font-family: 'Dancing Script', cursive;
 }
 
 body {
@@ -29,7 +29,7 @@ picture {
   background: #e0e0e0;
   box-shadow: 20px 20px 60px #bebebe,
     -20px -20px 60px #ffffff;
-  height: 25rem;
+  height: 30rem;
   width: 20rem;
   text-align: center;
   padding: 1em;
@@ -72,6 +72,30 @@ picture {
 
 .text {
   margin: 1.5rem 1rem 0 1rem;
+}
+
+.note {
+  padding: 1rem;
+  color: grey;
+}
+
+.line {
+  margin: 1rem auto;
+  background: linear-gradient(180deg, #7a7474, white);
+  height: 5px;
+  animation: line 1500ms ease-in-out 1;
+}
+
+@keyframes line {
+
+0% {
+  width: 5%;
+}
+
+100% {
+  width: 100%;
+}
+
 }
 
 /* balloon Effects */
